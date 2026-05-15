@@ -1,18 +1,21 @@
 # Coke Codex
 
-Coke Codex is a macOS desktop app that wraps Claude Code and OpenCode with a Codex-style interface.
+Coke Codex is a desktop app that wraps Claude Code and OpenCode with a Codex-style interface.
 
 The public release package includes the desktop shell and bundled Claude Code runtime. After installation, open **Settings** and enter your model provider API key before starting a conversation.
 
 ## Download
 
-Download the latest macOS Apple Silicon build from the GitHub Releases page:
+Download the latest builds from the GitHub Releases page:
 
 https://github.com/cokepoppy/coke-codex-app-public/releases
 
-Current package:
+Current packages:
 
-- `Coke Codex-0.1.0-arm64.dmg`
+- Windows 10+ x64: https://github.com/cokepoppy/coke-codex-app-public/releases/download/v0.1.4/Coke.Codex-0.1.4-x64-setup.exe
+- Windows 10+ arm64: https://github.com/cokepoppy/coke-codex-app-public/releases/download/v0.1.4/Coke.Codex-0.1.4-arm64-setup.exe
+- Windows combined installer: https://github.com/cokepoppy/coke-codex-app-public/releases/download/v0.1.4/Coke.Codex-0.1.4-setup.exe
+- macOS Apple Silicon: `Coke Codex-0.1.0-arm64.dmg`
 
 ## Highlights
 
@@ -50,7 +53,7 @@ Current package:
 
 ## Setup
 
-1. Install the `.dmg` package.
+1. Install the Windows `.exe` package or macOS `.dmg` package.
 2. Open **Coke Codex**.
 3. Open **Settings**.
 4. Fill in your API key, model, and provider endpoint.
