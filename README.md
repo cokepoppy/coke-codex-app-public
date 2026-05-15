@@ -15,7 +15,8 @@ Current packages:
 - Windows 10+ x64: https://github.com/cokepoppy/coke-codex-app-public/releases/download/v0.1.4/Coke.Codex-0.1.4-x64-setup.exe
 - Windows 10+ arm64: https://github.com/cokepoppy/coke-codex-app-public/releases/download/v0.1.4/Coke.Codex-0.1.4-arm64-setup.exe
 - Windows combined installer: https://github.com/cokepoppy/coke-codex-app-public/releases/download/v0.1.4/Coke.Codex-0.1.4-setup.exe
-- macOS Apple Silicon: `Coke Codex-0.1.0-arm64.dmg`
+- macOS Apple Silicon DMG: https://github.com/cokepoppy/coke-codex-app-public/releases/download/v0.1.4/Coke.Codex-0.1.4-arm64.dmg
+- macOS Apple Silicon ZIP: https://github.com/cokepoppy/coke-codex-app-public/releases/download/v0.1.4/Coke.Codex-0.1.4-arm64-mac.zip
 
 ## Highlights
 
