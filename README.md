@@ -38,6 +38,14 @@ Current packages:
 
 ![Chat Detail](docs/readme-images/chat2.png)
 
+### Windows 10+
+
+![Windows 10+ Chat](docs/readme-images/windows11-chat.png)
+
+### Provider 配置
+
+![Provider 配置](docs/readme-images/setting.png)
+
 ### Plugins
 
 ![Plugins](docs/readme-images/plugins.png)
