@@ -21,6 +21,10 @@ slides.forEach((_, index) => {
   dotsRoot.appendChild(dot);
 });
 
+slides.forEach((slide) => {
+  slide.querySelector("img").addEventListener("click", () => render(active + 1));
+});
+
 document.querySelector("[data-prev]").addEventListener("click", () => render(active - 1));
 document.querySelector("[data-next]").addEventListener("click", () => render(active + 1));
 
