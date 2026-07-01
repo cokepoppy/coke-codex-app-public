@@ -1,14 +1,159 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coke Claw - 个人专属智能金融终端 | 多智能体协作与量化投研专家</title>
-    <script type="module" crossorigin src="/coke-codex-app-public/assets/index-BirM3HGY.js"></script>
-    <link rel="stylesheet" crossorigin href="/coke-codex-app-public/assets/index-DvJ_4biK.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coke Codex 金融专家桌面 Agent</title>
+    <meta
+      name="description"
+      content="Coke Codex 是一个面向金融证券工作的桌面 Agent，把专家、技能、真实数据和可预览产物放进同一个工作台。"
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Coke Codex">
+        <span class="brand-mark">
+          <i></i><i></i><i></i><i></i>
+        </span>
+        <span>Coke Codex</span>
+      </a>
+      <nav aria-label="页面导航">
+        <a href="#experts">专家</a>
+        <a href="#screens">截图</a>
+        <a href="#download">下载</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Desktop Agent for Finance Work</p>
+          <h1>把金融专家、真实数据和可交付产物放进一个桌面工作台。</h1>
+          <p class="lede">
+            从股票研究、量化回测到投行估值和私募尽调，用户只说业务目标，专家 Skill 自动完成数据、脚本、报告和预览。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#download">下载应用</a>
+            <a class="button secondary" href="#screens">查看截图</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img src="./assets/screenshots/05-private-equity-preview.png" alt="Coke Codex 右侧 HTML 产物预览" />
+        </figure>
+      </section>
+
+      <section class="stats" aria-label="当前能力">
+        <div>
+          <strong>11</strong>
+          <span>金融证券专家</span>
+        </div>
+        <div>
+          <strong>1 句</strong>
+          <span>业务意图启动完整工作流</span>
+        </div>
+        <div>
+          <strong>HTML / Word / Excel</strong>
+          <span>聊天内产物卡与右侧预览</span>
+        </div>
+      </section>
+
+      <section id="experts" class="section compact">
+        <div class="section-heading">
+          <p class="eyebrow">Experts</p>
+          <h2>覆盖研究、建模、交易和尽调。</h2>
+        </div>
+        <div class="expert-grid">
+          <article><span class="dot blue"></span><h3>股票研究专家</h3><p>公司研究、估值、图表和 Word 报告。</p></article>
+          <article><span class="dot red"></span><h3>量化策略回测师</h3><p>真实数据、Python 回测和 HTML 仪表盘。</p></article>
+          <article><span class="dot yellow"></span><h3>金融建模专家</h3><p>DCF、敏感性、Excel 模型和校验。</p></article>
+          <article><span class="dot green"></span><h3>投行交易助理</h3><p>Pitch、可比公司、先例交易和 PPT。</p></article>
+          <article><span class="dot blue"></span><h3>私募股权专家</h3><p>尽调清单、红旗登记和 DD Tracker。</p></article>
+          <article><span class="dot red"></span><h3>财富管理专家</h3><p>组合再平衡、税务影响和客户报告。</p></article>
+        </div>
+      </section>
+
+      <section id="screens" class="section">
+        <div class="section-heading row">
+          <div>
+            <p class="eyebrow">Screenshots</p>
+            <h2>大图直接看细节。</h2>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" data-prev aria-label="上一张">‹</button>
+            <button type="button" data-next aria-label="下一张">›</button>
+          </div>
+        </div>
+
+        <div class="carousel" data-carousel>
+          <figure class="slide is-active">
+            <img src="./assets/screenshots/01-expert-gallery.png" alt="专家列表页面" />
+            <figcaption>Coke Codex 专家中心：选择金融专家后直接进入业务工作流。</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="./assets/screenshots/02-business-prompt.png" alt="选择专家后输入一句业务意图" />
+            <figcaption>选择专家后，只输入一句业务意图。</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="./assets/screenshots/03-running.png" alt="专家运行中" />
+            <figcaption>运行中展示模型、权限、项目和进度。</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="./assets/screenshots/04-word-report-preview.png" alt="Word 股票研究报告预览" />
+            <figcaption>股票研究报告可直接在右侧预览 Word。</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="./assets/screenshots/05-private-equity-preview.png" alt="私募股权 HTML 尽调仪表盘预览" />
+            <figcaption>私募股权专家生成 DD Tracker 和 HTML 仪表盘。</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="./assets/screenshots/06-deal-assistant-preview.png" alt="投行交易助理产物预览" />
+            <figcaption>投行交易助理输出 Pitch、Excel 和 PPT 产物。</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="./assets/screenshots/07-dcf-preview.png" alt="DCF HTML 估值报告预览" />
+            <figcaption>金融建模专家生成 DCF 模型和估值报告。</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="./assets/screenshots/08-quant-preview.png" alt="量化回测 HTML 报告预览" />
+            <figcaption>量化回测产出指标、交易记录和 HTML 面板。</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="./assets/screenshots/09-wealth-preview.png" alt="财富管理报告预览" />
+            <figcaption>财富管理专家支持客户组合再平衡报告。</figcaption>
+          </figure>
+        </div>
+
+        <div class="slide-dots" data-dots aria-label="截图分页"></div>
+      </section>
+
+      <section id="download" class="section download">
+        <div class="section-heading">
+          <p class="eyebrow">Download</p>
+          <h2>下载桌面应用。</h2>
+          <p>macOS 包适合 Apple Silicon；Windows 包适合 x64。未公证的 macOS 测试包可能需要手动允许打开。</p>
+        </div>
+        <div class="download-grid">
+          <a class="download-card" href="https://github.com/cokepoppy/coke-codex-app-public/releases/download/v0.1.12/Coke-Codex-0.1.12-arm64.zip">
+            <span>macOS</span>
+            <strong>Download for Mac</strong>
+            <small>Apple Silicon · ZIP</small>
+          </a>
+          <a class="download-card" href="https://github.com/cokepoppy/coke-codex-app-public/releases/download/v0.1.12/Coke-Codex-0.1.12-win-x64.zip">
+            <span>Windows</span>
+            <strong>Download for Windows</strong>
+            <small>x64 · ZIP</small>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Coke Codex</span>
+      <span>金融工作流桌面 Agent</span>
+    </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
-
