@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coke Codex 云端沙箱与群聊 Agent</title>
+    <meta
+      name="description"
+      content="Coke Codex 云端沙箱、飞书和钉钉群聊 Agent 的产品展示页面。"
+    />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./sandbox.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Coke Codex 沙箱展示">
+      <a class="brand" href="../" aria-label="返回 Coke Codex 首页">
+        <span class="brand-mark">C</span>
+        <span>Coke Codex</span>
+      </a>
+      <nav aria-label="页面导航">
+        <a href="#flow">协作流程</a>
+        <a href="#gallery">截图</a>
+        <a href="#architecture">架构</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="kicker">Cloud Sandbox · Feishu · DingTalk</p>
+          <h1>把群聊里的一个 @，变成可预览、可继续协作的云端工作区。</h1>
+          <p class="hero-text">
+            Coke Codex 的云端沙箱模式让飞书和钉钉群聊成为任务入口。Agent 在群里接收上下文，
+            在绑定的沙箱里执行工作，并把最终产物以卡片和浏览器链接交付给团队。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#gallery">查看大图轮播</a>
+            <button class="ghost-action" type="button" data-open-current>最大化首图</button>
+          </div>
+        </div>
+        <div class="hero-shot" aria-label="云端沙箱截图预览">
+          <button class="shot-button" type="button" data-hero-next>
+            <img
+              src="../assets/sandbox/dingtalk-fin-expert.png"
+              alt="钉钉群聊中的金融专家 Agent 任务卡片"
+              data-hero-image
+            />
+          </button>
+          <p data-hero-caption>钉钉群聊触发金融专家，卡片优先展示交付物。</p>
+        </div>
+      </section>
+
+      <section id="flow" class="flow-section">
+        <article>
+          <span>01</span>
+          <h2>群聊触发</h2>
+          <p>团队成员在飞书或钉钉群里 @ Agent，消息和必要上下文进入 channel gateway。</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h2>沙箱执行</h2>
+          <p>群绑定一个云端沙箱。Agent 在同一个项目工作区生成报告、HTML、文档或数据文件。</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h2>产物回传</h2>
+          <p>群聊里返回简洁卡片，重点露出最终产物和沙箱链接，避免把长代码刷满会话。</p>
+        </article>
+      </section>
+
+      <section id="gallery" class="gallery-section" aria-label="产品截图轮播">
+        <div class="section-heading">
+          <p class="kicker">Product Gallery</p>
+          <h2>真实群聊入口，真实云端沙箱，真实产物预览。</h2>
+          <p>
+            点击大图切换下一张；点击“最大化”可以用接近原始尺寸查看截图细节。
+          </p>
+        </div>
+
+        <div class="carousel-shell">
+          <div class="carousel-meta">
+            <div>
+              <span data-slide-count>1 / 8</span>
+              <h3 data-slide-title>钉钉金融专家任务卡片</h3>
+            </div>
+            <button class="fullscreen-button" type="button" data-open-current>最大化查看</button>
+          </div>
+
+          <div class="carousel-frame">
+            <button class="nav-button prev" type="button" data-prev aria-label="上一张">‹</button>
+            <button class="carousel-image-button" type="button" data-next-image aria-label="切换到下一张截图">
+              <img
+                src="../assets/sandbox/dingtalk-fin-expert.png"
+                alt="钉钉群聊中的金融专家 Agent 任务卡片"
+                data-carousel-image
+              />
+            </button>
+            <button class="nav-button next" type="button" data-next aria-label="下一张">›</button>
+          </div>
+
+          <p class="caption" data-slide-caption>
+            钉钉金融专家完成卡片，交付物入口优先展示。
+          </p>
+          <div class="dots" data-dots aria-label="截图分页"></div>
+        </div>
+      </section>
+
+      <section id="architecture" class="architecture-section">
+        <div class="architecture-copy">
+          <p class="kicker">Interaction Model</p>
+          <h2>群、用户和沙箱各司其职。</h2>
+          <p>
+            群聊是入口，沙箱是执行现场，Coke Codex Web 是可视化工作台。团队成员可以继续在群里追问，
+            也可以打开浏览器进入同一个沙箱查看文件树、预览报告和接管项目。
+          </p>
+        </div>
+        <div class="model-grid">
+          <div>
+            <strong>群绑定沙箱</strong>
+            <span>适合多人围绕同一个任务持续协作，减少“到底是谁的沙箱”的歧义。</span>
+          </div>
+          <div>
+            <strong>组织身份映射</strong>
+            <span>飞书、钉钉用户后续可通过统一认证映射到 Coke Codex 账号和权限。</span>
+          </div>
+          <div>
+            <strong>产物优先</strong>
+            <span>聊天卡片展示 HTML、Word、PPT、Markdown 等最终交付物，长内容留在沙箱。</span>
+          </div>
+          <div>
+            <strong>浏览器续作</strong>
+            <span>点击链接打开完整 Web 沙箱，保持和桌面端一致的项目、聊天、文件预览体验。</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" data-lightbox hidden>
+      <div class="lightbox-toolbar">
+        <div>
+          <span data-lightbox-count>1 / 8</span>
+          <strong data-lightbox-title>钉钉金融专家任务卡片</strong>
+        </div>
+        <button type="button" data-close-lightbox>关闭</button>
+      </div>
+      <button class="lightbox-nav lightbox-prev" type="button" data-prev aria-label="上一张">‹</button>
+      <img
+        src="../assets/sandbox/dingtalk-fin-expert.png"
+        alt="钉钉群聊中的金融专家 Agent 任务卡片"
+        data-lightbox-image
+      />
+      <button class="lightbox-nav lightbox-next" type="button" data-next aria-label="下一张">›</button>
+    </div>
+
+    <script src="./sandbox.js"></script>
+  </body>
+</html>
